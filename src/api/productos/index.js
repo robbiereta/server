@@ -3,7 +3,7 @@ import { middleware as query } from 'querymen'
 import { middleware as body } from 'bodymen'
 import { create, index, show, update, destroy } from './controller'
 import { schema } from './model'
-export Productos, { schema } from './model'
+import Productos, { schema } from './model'
 
 const router = new Router()
 const { descripcion, precio } = schema.tree
